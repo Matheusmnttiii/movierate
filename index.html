@@ -38,7 +38,7 @@
         <div class="controls">
           <div class="control">
             <label for="q">Buscar</label>
-            <input id="q" type="search" placeholder="Ex: interestelar, matrix, toy story..." />
+            <input id="q" type="search" placeholder="Ex: interestelar, matrix..." />
           </div>
 
           <div class="control">
@@ -130,18 +130,29 @@
         <div class="details">
           <p id="mDesc" class="desc"></p>
 
+          <div class="info-grid">
+            <div class="info-block">
+              <span class="info-label">Diretor</span>
+              <p class="info-text" id="mDirector">-</p>
+            </div>
+            <div class="info-block">
+              <span class="info-label">Elenco</span>
+              <p class="info-text" id="mCast">-</p>
+            </div>
+          </div>
+
           <div class="row">
             <div class="kpi">
-              <span class="muted">Sua nota</span>
+              <span>Sua nota</span>
               <div class="stars" id="mStars"></div>
               <small class="muted" id="mHint">Clique nas estrelas para avaliar</small>
             </div>
 
             <div class="kpi">
-              <span class="muted">Status</span>
+              <span>Status</span>
               <div class="chips">
                 <button class="chip" id="btnFav" type="button">☆ Favoritar</button>
-                <button class="chip" id="btnWatched" type="button">👁 Marcar como visto</button>
+                <button class="chip" id="btnWatched" type="button">👁 Visto</button>
               </div>
               <small class="muted" id="mSaved">Salvo automaticamente</small>
             </div>
@@ -150,7 +161,7 @@
           <div class="providers">
             <h4>Onde encontrar</h4>
             <div class="provGrid" id="mProviders"></div>
-            <small class="muted">* Demonstração. Você pode editar a lista de provedores no JS.</small>
+            <small class="muted">* Demonstração. Você pode editar no JS.</small>
           </div>
         </div>
       </div>
